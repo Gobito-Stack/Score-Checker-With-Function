@@ -1,0 +1,36 @@
+class Score_Analyzer:
+    def max_score(self, grades):
+        highest_scores = grades[0]
+        for score in grades:
+            if score > highest_score:
+                highest_score = score
+        return scores
+        
+        
+    def min_score(self, grades):
+        lowest_score = grades[0]
+        for score in grades:
+            if score < lowest_score:
+                lowest_score = score
+        return scores
+        
+        
+    def average_score(self, grades):
+        total = 0
+        full = len(grades)
+        for index in range(len(grades)):
+            total += grades[index]
+        average = total / full
+        return average
+        
+        
+    def total_score(self, grades):
+        total = 0
+        for grade in range(len(grades)):
+            total += grades[grade]
+        return total
+            
+        
+check = Score_Analyzer()
+a = check.total_score([45, 67, 89, 20, 99])
+print(a)
